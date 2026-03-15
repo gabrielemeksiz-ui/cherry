@@ -22,6 +22,8 @@ export async function GET() {
       }
 
       if (!res.ok) {
+        const body = await res.text()
+        console.error('[playlists] Spotify error', res.status, body)
         return Response.json({ error: 'Impossible de charger tes playlists Spotify' }, { status: 500 })
       }
 

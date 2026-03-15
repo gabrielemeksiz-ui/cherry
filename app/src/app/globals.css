@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-cherry: #E91E8C;
+  --color-cherry-light: #FCE4F1;
+  --color-cherry-mid: #F8BBD9;
+  --color-text-dark: #2C2C2C;
+  --color-text-muted: #888888;
+  --color-spotify: #1DB954;
+  --color-deezer: #FF5200;
+  --color-background: #ffffff;
+  --color-foreground: #2C2C2C;
+  --font-sans: var(--font-poppins);
+  --radius: 16px;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text-dark);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
