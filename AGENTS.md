@@ -43,9 +43,9 @@ Load only when needed:
 
 ## Current State
 **Last Updated:** 2026-03-15
-**Working On:** Phase 2 — Apple Music ↔ Spotify transfer
-**Recently Completed:** Phase 1 entière — Next.js scaffold, Cherry design system, homepage UI, Spotify OAuth direct (sans Supabase Auth), cookie auth via HTML 200 response (fix Next.js 16 bug), connexion status sur homepage
-**Blocked By:** Rien — Phase 1 ✅
+**Working On:** Phase 3 — History + Polish
+**Recently Completed:** Phase 2 — Apple Music ↔ Spotify transfer (both directions: XML upload + streaming transfer, Spotify playlist export to iTunes XML)
+**Blocked By:** Rien — Phase 2 ✅
 
 ## Roadmap
 
@@ -60,17 +60,17 @@ Load only when needed:
 
 ### Phase 2: Core Transfer — Apple Music ↔ Spotify (Jour 3-4)
 **Direction A — Apple Music → Spotify**
-- [ ] Homepage: remove Deezer button, single CTA "Choisir une direction →"
-- [ ] /transfer page: mode selector (two cards)
-- [ ] XML upload (drag & drop) + parse with xml2js
-- [ ] Show playlist list from XML, user selects one
-- [ ] Transfer to Spotify with streaming progress bar
-- [ ] Summary: X transferred, Y not found + unmatched list
+- [x] Homepage: remove Deezer button, single CTA "Choisir une direction →"
+- [x] /transfer page: mode selector (two cards)
+- [x] XML upload (drag & drop) + parse with xml2js
+- [x] Show playlist list from XML, user selects one
+- [x] Transfer to Spotify with streaming progress bar
+- [x] Summary: X transferred, Y not found + unmatched list
 
 **Direction B — Spotify → Apple Music**
-- [ ] Fetch and display user's Spotify playlists
-- [ ] Generate iTunes Library XML from selected playlist
-- [ ] Download XML + instructions to import into Music.app on Mac
+- [x] Fetch and display user's Spotify playlists
+- [x] Generate iTunes Library XML from selected playlist
+- [x] Download XML + instructions to import into Music.app on Mac
 
 ### Phase 4: History + Polish (Jour 4-5)
 - [ ] Save each transfer to Supabase (name, source, date, counts)

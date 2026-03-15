@@ -5,12 +5,13 @@ DO NOT delete historical context if it is still relevant. Compress older complet
 -->
 
 ## 🏗️ Active Phase & Goal
-**Current Task:** Phase 2 — Apple Music ↔ Spotify transfer
+**Current Task:** Phase 3 — History + Polish
 **Next Steps:**
-1. Update homepage — remove Deezer button, single CTA post-Spotify-connect
-2. /transfer page with mode selector (two directions)
-3. Direction A (Apple Music → Spotify): XML upload → parse → playlist select → transfer with streaming progress
-4. Direction B (Spotify → Apple Music): fetch Spotify playlists → generate iTunes XML download
+1. Save each transfer to Supabase (table `transfers`: name, source, date, track count, status)
+2. History page listing all past transfers
+3. Test on mobile (iPhone + Android)
+4. Test with 500+ song playlist
+5. Fix any visual bugs found
 
 ## 📂 Architectural Decisions
 - 2026-03-15 — Choisi Next.js (VSCode + Claude) plutôt que Lovable — plus de contrôle nécessaire
@@ -29,7 +30,7 @@ DO NOT delete historical context if it is still relevant. Compress older complet
 
 ## 📜 Completed Phases
 - [x] Phase 1 — Foundation (Spotify OAuth, homepage rose, cookie auth)
-- [ ] Phase 2 — Apple Music ↔ Spotify transfer
+- [x] Phase 2 — Apple Music ↔ Spotify transfer
 - [ ] Phase 3 — Apple Music XML import
 - [ ] Phase 4 — History + Polish
 - [ ] Phase 5 — Launch

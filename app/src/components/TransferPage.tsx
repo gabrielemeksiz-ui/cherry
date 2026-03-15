@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import type { ReactNode } from 'react'
+import Link from 'next/link'
 import ModeSelector from './ModeSelector'
 import AppleToSpotify from './AppleToSpotify'
 import SpotifyToApple from './SpotifyToApple'
@@ -40,9 +41,9 @@ function Layout({ children }: { children: ReactNode }) {
   return (
     <main className="min-h-screen bg-[#FCE4F1] flex flex-col items-center justify-center px-6 py-12">
       <div className="mb-8 text-center">
-        <a href="/" className="text-3xl font-bold text-[#E91E8C] tracking-tight">
+        <Link href="/" className="text-3xl font-bold text-[#E91E8C] tracking-tight">
           Cherry 🍒
-        </a>
+        </Link>
       </div>
       <div className="bg-white rounded-[24px] shadow-lg w-full max-w-md p-8">
         {children}
